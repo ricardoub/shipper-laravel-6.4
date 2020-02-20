@@ -1,16 +1,42 @@
-# shipment-laravel
+# SHIPPER Project
 
-# To use the project you must:
-1. Clone the repository;
+## To use the project you must:
+1. Clone the repository
 1. Run the npm install command
 
-# Steps used to create the project:
+
+## To create this project I did the following steps
+
+### Steps to create the Laravel project:
 ```
 composer create-project laravel/laravel -- prefer-dist shipper
 composer require laravel/ui
 php artisan ui vue --auth
 npm install
 npm run dev
+```
+
+### Steps used to install basic project dependencies
+```
+npm install --save bootstrap jquery popper.js
+npm install --save @fortawesome/fontawesome-free
+
+edit file [app.scss]
+  $fa-font-path: "../webfonts";
+  
+  @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+  @import '~@fortawesome/fontawesome-free/scss/solid.scss';
+  @import '~@fortawesome/fontawesome-free/scss/regular.scss';
+
+npm run dev
+npm run watch
+```
+
+### Steps used to switch namespace of models
+Follow the tutorial at: https://kallbuloso.com.br/amaralkarl/alterar-o-diretorio-padrao-dos-models-no-laravel/
+
+### 
+```
 
 ```
 
